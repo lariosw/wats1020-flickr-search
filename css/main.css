@@ -2,13 +2,22 @@
    Author's custom styles
    ========================================================================== */
 
-/* Enable these styles if you wish to go into a grid layout.
+
 ul#images li {
-    width: 120px;
-    height: auto;
+    width: 200px;
+    height: 325px;
     display: inline-block;
     position: relative;
     float: left;
+    margin: 5px;
+    padding: 2px;
+    border: 1px solid black;
+    
+}
+
+ul#images li .image-pic-wrapper{
+    height:205px;  
+    overflow:hidden;
 }
 
 ul#images li img {
@@ -21,10 +30,15 @@ ul#images li button {
     display: inline-block;
 }
 
---- End of grid layout styles. */
-
 ul#images {
     list-style-type: none;
+}
+ul#images li p {
+    font-size: small;
+    text-overflow: ellipsis;
+    max-width: 190px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 ul#images .placeholder {
@@ -32,7 +46,14 @@ ul#images .placeholder {
     font-weight: lighter;
     color: #666;
     width: 100%;
-    margin: 2em;
+    border: none;
+    margin: 0;
+    text-align: center;
+    padding-top: 50px;
+}
+
+ul#images .img-heading {
+    font-weight:bold;
 }
 .modal-body img {
     width: 100%;
@@ -43,8 +64,19 @@ hr {
     clear:both;
 }
 
+#images li.placeholder {
+    border: none;
+    margin: 0;
+    text-align: center;
+    padding-top: 50px;
+    
+    
+}
 
-
+div h1.search-title {
+    text-align: center;
+    padding-top: 50px;
+}
 
 
 
